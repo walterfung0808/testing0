@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Animes survey</title>
+        <style>
+            :root {
+                --size1: 500px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 48px;
+                font-family: medium;
+            }
+            body {
+                text-align: center;
+                background-color: #000000;
+                color: #FF0000;
+                padding: 20px 100px 100px 100px;
+            }
+            .img1 {
+                border-color: red;
+                border-width: 10px;
+                border-style: double;
+                border-radius: 88%;
+                box-shadow: 18px 38px 38px rgba(187, 163, 163, 0.2);
+            }
+            .pp1{
+                padding: 66px 0px 66px 0px;
+                font-weight: bold ;
+                font-style: italic;
+                color: orange;
+            }
+            .p1 {
+                line-height: justify;
+            }
+            .pp2 {
+                margin: 0px;
+            }
+            .anime {
+                margin-top: var(--size1);
+                height: var(--size1);
+                font-size: 88px;
+            }
+            .anime2 {
+                font-size: 28px;
+            }
+            #anime:hover {
+                color: red;
+                box-shadow: 10px 10px 18px 18px rgba(175,0,0,0.5);
+            }
+            .anime:hover {
+                transform: scale(1.2);
+            }
+            .time1 {
+                text-align: right;
+                margin-right: -10px;
+                color: white;
+                font-size: 8px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Animes Survey</h1>
+        <hr>
+
+        <br>
+
+        <a href="#anime">
+        <img class="img1" src="123.jfif" alt="oops">
+        </a>
+
+        <div class="p1">
+        <p>We are the <mark class="anime2">Anime Association</mark> of our university and we would like to have your feedbacks on 
+            choosing the anime for our upcoming Anime festival event!
+        </p>
+        </div>
+        <p>Please pick your favourite animes or tell us below</p>
+        
+        <div class="pp1">
+        <label for="Angel-beats">
+            <input id="Angel-beats" value="Angel-beats" type="checkbox" name="animes" checked>Angel Beats
+        </label>
+        <label for="7-deadly-sins">
+            <input id="7-deadly-sins" value="7-deadly-sins" type="checkbox" name="animes">Seven Deadly Sins
+        </label>
+        <label for="Naruto">
+            <input id="naruto" value="naruto" type="checkbox" name="animes"><s>Naruto</s>
+        </label>
+        </div>
+
+        <div class="pp2">
+            <form  action="thanks_submit.html">
+                <p>Or tell us</p>
+                <input required type="text" placeholder="your favourite anime">
+                <input  type="submit" name="submit" value="submit!">
+            </form>    
+        </div>
+
+        <br>
+
+        <p>We appreciate your time and feedbacks. Therefore, here are some anime sites to show our graditude as appreciation
+        </p>
+
+        <div class="anime">
+        <a id="anime" name="anime" href="https://www.ifsp.tv/" target="_blank">Free Anime videos</a>
+        </div>
+
+        <p class="time1"> <u>edited on <time>2021-01-23</time></u>
+        </p>
+
+    </body>
+</html>
